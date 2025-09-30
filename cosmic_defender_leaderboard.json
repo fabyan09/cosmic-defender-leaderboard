@@ -12,32 +12,14 @@
       "date": "2025-09-30 15:44"
     },
     {
-      "player_id": "d5790c30-ca36-4295-84a6-d87ea0605cb3",
-      "name": "fab",
-      "score": 2940,
-      "wave": 11,
-      "mode": "normal",
-      "timestamp": "2025-09-30T14:26:55.343317",
-      "date": "2025-09-30 14:26"
-    },
-    {
-      "player_id": "d5790c30-ca36-4295-84a6-d87ea0605cb3",
-      "name": "fab",
-      "score": 1925,
-      "wave": 10,
-      "mode": "infinite",
-      "timestamp": "2025-09-30T12:25:56.064966",
-      "date": "2025-09-30 12:25"
-    },
-    {
-      "player_id": "d5790c30-ca36-4295-84a6-d87ea0605cb3",
-      "name": "fabtest1",
-      "score": 1605,
-      "wave": 10,
-      "mode": "infinite",
-      "timestamp": "2025-09-30T12:51:09.460228",
-      "date": "2025-09-30 12:51"
-    },
+    "player_id": "4a1a47df-65f1-4a07-9597-7429c4db1da8",
+    "name": "Fab",
+    "score": 17200,
+    "wave": 40,
+    "mode": "infinite",
+    "timestamp": "2025-09-30T21:42:02.183050",
+    "date": "2025-09-30 21:42"
+  },
     {
       "player_id": "d5790c30-ca36-4295-84a6-d87ea0605cb3",
       "name": "test",
