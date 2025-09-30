@@ -5,6 +5,7 @@ class CosmicLeaderboard {
         this.scores = [];
         this.filteredScores = [];
         this.currentFilter = 'all';
+        this.searchTerm = '';
         this.init();
     }
 
@@ -24,6 +25,23 @@ class CosmicLeaderboard {
                 this.setFilter(mode);
             });
         });
+
+        // Search functionality
+        const searchInput = document.getElementById('search-input');
+        const clearBtn = document.getElementById('clear-search');
+
+        searchInput.addEventListener('input', (e) => {
+            this.searchTerm = e.target.value.toLowerCase();
+            this.updateClearButton();
+            this.renderLeaderboard();
+        });
+
+        clearBtn.addEventListener('click', () => {
+            searchInput.value = '';
+            this.searchTerm = '';
+            this.updateClearButton();
+            this.renderLeaderboard();
+        });
     }
 
     async loadScores() {
@@ -37,11 +55,16 @@ class CosmicLeaderboard {
             // Try to load from GitHub Pages first, then fallback to local file
             let response;
             try {
-                // Replace with your actual GitHub Pages URL
-                response = await fetch('https://fabyan09.github.io/cosmic_defender_leaderboard.json');
+                // GitHub raw file URL for real-time updates
+                response = await fetch('https://raw.githubusercontent.com/fabyan09/cosmic-defender-leaderboard/main/cosmic_defender_leaderboard.json');
             } catch (githubError) {
-                // Fallback to local file for testing
-                response = await fetch('./cosmic_defender_leaderboard.json');
+                try {
+                    // Fallback to GitHub Pages
+                    response = await fetch('https://fabyan09.github.io/cosmic-defender-leaderboard/cosmic_defender_leaderboard.json');
+                } catch (pagesError) {
+                    // Fallback to local file for testing
+                    response = await fetch('./cosmic_defender_leaderboard.json');
+                }
             }
 
             if (!response.ok) {
@@ -87,13 +110,35 @@ class CosmicLeaderboard {
         document.querySelector(`[data-mode="${mode}"]`).classList.add('active');
 
         // Filter scores
-        if (mode === 'all') {
-            this.filteredScores = [...this.scores];
-        } else {
-            this.filteredScores = this.scores.filter(score => score.mode === mode);
+        this.applyFilters();
+        this.renderLeaderboard();
+    }
+
+    applyFilters() {
+        let filtered = [...this.scores];
+
+        // Apply mode filter
+        if (this.currentFilter !== 'all') {
+            filtered = filtered.filter(score => score.mode === this.currentFilter);
         }
 
-        this.renderLeaderboard();
+        // Apply search filter
+        if (this.searchTerm) {
+            filtered = filtered.filter(score =>
+                score.name.toLowerCase().includes(this.searchTerm)
+            );
+        }
+
+        this.filteredScores = filtered;
+    }
+
+    updateClearButton() {
+        const clearBtn = document.getElementById('clear-search');
+        if (this.searchTerm) {
+            clearBtn.classList.add('visible');
+        } else {
+            clearBtn.classList.remove('visible');
+        }
     }
 
     updateStats() {
@@ -139,13 +184,23 @@ class CosmicLeaderboard {
         const tbody = document.getElementById('leaderboard-body');
         tbody.innerHTML = '';
 
-        const scoresToShow = this.currentFilter === 'all' ? this.scores : this.filteredScores;
+        // Apply filters before rendering
+        this.applyFilters();
+        const scoresToShow = this.filteredScores;
 
         if (scoresToShow.length === 0) {
             const row = document.createElement('tr');
+            let message = 'Aucun score trouvé';
+            if (this.searchTerm) {
+                message += ` pour "${this.searchTerm}"`;
+            }
+            if (this.currentFilter !== 'all') {
+                message += ` en mode ${this.currentFilter.toUpperCase()}`;
+            }
+
             row.innerHTML = `
                 <td colspan="6" style="text-align: center; padding: 40px; color: #666;">
-                    Aucun score trouvé pour ce mode de jeu
+                    ${message}
                 </td>
             `;
             tbody.appendChild(row);
