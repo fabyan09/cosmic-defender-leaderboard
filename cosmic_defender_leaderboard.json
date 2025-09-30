@@ -1,15 +1,24 @@
 {
-  "last_updated": "2025-09-30T12:30:50.447949",
-  "total_scores": 5,
+  "last_updated": "2025-09-30T12:51:09.482169",
+  "total_scores": 2,
   "scores": [
     {
-      "player_id": "test-player-123",
-      "name": "TEST_PLAYER",
-      "score": 9999,
-      "wave": 15,
+      "player_id": "d5790c30-ca36-4295-84a6-d87ea0605cb3",
+      "name": "fab",
+      "score": 1925,
+      "wave": 10,
       "mode": "infinite",
-      "timestamp": "2025-09-30T12:30:50.447949",
-      "date": "2025-09-30 12:30"
+      "timestamp": "2025-09-30T12:25:56.064966",
+      "date": "2025-09-30 12:25"
+    },
+    {
+      "player_id": "d5790c30-ca36-4295-84a6-d87ea0605cb3",
+      "name": "fabtest1",
+      "score": 1605,
+      "wave": 10,
+      "mode": "infinite",
+      "timestamp": "2025-09-30T12:51:09.460228",
+      "date": "2025-09-30 12:51"
     }
   ]
 }
