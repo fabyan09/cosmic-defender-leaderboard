@@ -113,7 +113,7 @@ header {
     display: flex;
     justify-content: center;
     gap: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     flex-wrap: wrap;
 }
 
@@ -142,6 +142,60 @@ header {
     border-color: #00ffff;
     color: #000;
     box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+}
+
+/* Search */
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    gap: 10px;
+}
+
+.search-input {
+    background: linear-gradient(145deg, rgba(26, 26, 46, 0.9), rgba(22, 33, 62, 0.9));
+    border: 2px solid #00ffff;
+    border-radius: 25px;
+    padding: 12px 20px;
+    font-family: 'Orbitron', monospace;
+    font-size: 1rem;
+    color: #ffffff;
+    width: 300px;
+    max-width: 80vw;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+.search-input::placeholder {
+    color: #888888;
+}
+
+.search-input:focus {
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+    border-color: #ffff00;
+}
+
+.clear-btn {
+    background: linear-gradient(145deg, #ff4444, #cc0000);
+    border: 2px solid #ff4444;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: none;
+}
+
+.clear-btn:hover {
+    box-shadow: 0 0 15px rgba(255, 68, 68, 0.5);
+    transform: scale(1.1);
+}
+
+.clear-btn.visible {
+    display: block;
 }
 
 /* Leaderboard */
