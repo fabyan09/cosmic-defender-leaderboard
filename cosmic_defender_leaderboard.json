@@ -1,6 +1,6 @@
 {
-  "last_updated": "2025-10-01T12:00:08.193098",
-  "total_scores": 12,
+  "last_updated": "2025-10-01T14:21:39.428012",
+  "total_scores": 13,
   "scores": [
     {
       "player_id": "d5790c30-ca36-4295-84a6-d87ea0605cb3",
@@ -109,6 +109,15 @@
       "mode": "infinite",
       "timestamp": "2025-09-30T14:32:22.271511",
       "date": "2025-09-30 14:32"
+    },
+    {
+      "player_id": "4f218e08-5a55-4100-acae-9d85b846e388",
+      "name": "mec_nul",
+      "score": 20,
+      "wave": 3,
+      "mode": "infinite",
+      "timestamp": "2025-10-01T14:21:38.088729",
+      "date": "2025-10-01 14:21"
     }
   ]
 }
