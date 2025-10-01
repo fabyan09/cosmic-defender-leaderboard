@@ -1,6 +1,6 @@
 {
-  "last_updated": "2025-10-01T14:21:39.428012",
-  "total_scores": 13,
+  "last_updated": "2025-10-01T14:37:13.508194",
+  "total_scores": 14,
   "scores": [
     {
       "player_id": "d5790c30-ca36-4295-84a6-d87ea0605cb3",
@@ -100,6 +100,15 @@
       "mode": "infinite",
       "timestamp": "2025-10-01T13:57:51.889873",
       "date": "2025-10-01 13:57"
+    },
+    {
+      "player_id": "6f7520f9-bd83-4dc5-a6e3-f519c4dbe5fb",
+      "name": "mauvais_joueur12",
+      "score": 155,
+      "wave": 4,
+      "mode": "infinite",
+      "timestamp": "2025-10-01T14:37:12.189067",
+      "date": "2025-10-01 14:37"
     },
     {
       "player_id": "d5790c30-ca36-4295-84a6-d87ea0605cb3",
