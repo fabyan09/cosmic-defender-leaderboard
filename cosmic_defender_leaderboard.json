@@ -1,6 +1,6 @@
 {
-  "last_updated": "2025-10-02T10:28:02.841404",
-  "total_scores": 17,
+  "last_updated": "2025-10-02T12:28:51.640803",
+  "total_scores": 18,
   "scores": [
     {
       "player_id": "a98fd02f-7a31-4104-963a-e3800a10bc4d",
@@ -127,6 +127,15 @@
       "mode": "normal",
       "timestamp": "2025-10-01T15:52:17.357649",
       "date": "2025-10-01 15:52"
+    },
+    {
+      "player_id": "686ead72-23f9-4699-80c3-e01fa2bba0eb",
+      "name": "badguy25",
+      "score": 425,
+      "wave": 4,
+      "mode": "normal",
+      "timestamp": "2025-10-02T12:28:51.192493",
+      "date": "2025-10-02 12:28"
     },
     {
       "player_id": "6f7520f9-bd83-4dc5-a6e3-f519c4dbe5fb",
