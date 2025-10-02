@@ -1,6 +1,6 @@
 {
-  "last_updated": "2025-10-01T15:52:18.408917",
-  "total_scores": 16,
+  "last_updated": "2025-10-02T10:28:02.841404",
+  "total_scores": 17,
   "scores": [
     {
       "player_id": "a98fd02f-7a31-4104-963a-e3800a10bc4d",
@@ -10,6 +10,15 @@
       "mode": "infinite",
       "timestamp": "2025-10-01T23:54:45.452689",
       "date": "2025-10-01 23:54"
+    },
+    {
+      "player_id": "d5790c30-ca36-4295-84a6-d87ea0605cb3",
+      "name": "Fab",
+      "score": 9965,
+      "wave": 20,
+      "mode": "infinite",
+      "timestamp": "2025-10-02T10:28:01.511965",
+      "date": "2025-10-02 10:28"
     },
     {
       "player_id": "d5790c30-ca36-4295-84a6-d87ea0605cb3",
