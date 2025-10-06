@@ -1,6 +1,6 @@
 {
-  "last_updated": "2025-10-03T20:09:41.024873",
-  "total_scores": 22,
+  "last_updated": "2025-10-06T11:24:11.780013",
+  "total_scores": 23,
   "scores": [
     {
       "player_id": "a98fd02f-7a31-4104-963a-e3800a10bc4d",
@@ -28,6 +28,15 @@
       "mode": "infinite",
       "timestamp": "2025-10-02T10:28:01.511965",
       "date": "2025-10-02 10:28"
+    },
+    {
+      "player_id": "24d6b7a1-8908-4d81-b82a-65ca43b15c34",
+      "name": "LeCoursYPue",
+      "score": 6195,
+      "wave": 16,
+      "mode": "infinite",
+      "timestamp": "2025-10-06T11:24:10.974253",
+      "date": "2025-10-06 11:24"
     },
     {
       "player_id": "d5790c30-ca36-4295-84a6-d87ea0605cb3",
