@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-02-19T09:50:05.952769",
-  "total_scores": 25,
+  "last_updated": "2026-02-19T11:17:26.219594",
+  "total_scores": 26,
   "scores": [
     {
       "player_id": "a98fd02f-7a31-4104-963a-e3800a10bc4d",
@@ -37,6 +37,15 @@
       "mode": "infinite",
       "timestamp": "2026-02-19T09:50:05.684264",
       "date": "2026-02-19 09:50"
+    },
+    {
+      "player_id": "test-player-123",
+      "name": "TEST_PLAYER",
+      "score": 9999,
+      "wave": 15,
+      "mode": "infinite",
+      "timestamp": "2026-02-19T11:17:25.939025",
+      "date": "2026-02-19 11:17"
     },
     {
       "player_id": "d5790c30-ca36-4295-84a6-d87ea0605cb3",
